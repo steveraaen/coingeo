@@ -1,16 +1,20 @@
 node_modules
 # data
-caminos
-graaw
-roads
+/caminos
+/graaw
+/roads
 *.ndjson
 *.dbf
 *.zip
 *.shp
 *.csv
-data
+/data
 pldb.json
 pleiades.json
 converted.json
 damrcs2.json
 hoards.json
+damrcs.js
+gh.js
+hoards.json
+geoPleiades.js
