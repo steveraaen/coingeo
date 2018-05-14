@@ -5,3 +5,5 @@ node_modules
 *.dbf
 *.zip
 *.shp
+*.csv
+data
