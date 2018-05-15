@@ -1,14 +1,14 @@
 node_modules
 # data
-/caminos
-/graaw
-/roads
+caminos
+graaw
+roads
 *.ndjson
 *.dbf
 *.zip
 *.shp
 *.csv
-/data
+data
 pldb.json
 pleiades.json
 converted.json
