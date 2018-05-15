@@ -2,18 +2,8 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird')
-const proj4 = require('proj4')
-const fs = require('fs')
 const bodyParser = require('body-parser')
 const app = express();
-const hoa = require('./gh.js')
-const spots = require('./data/spots.js')
-const pleFeat = require('./data/pleFeat.js')
-const graa = require('./data/graaw/graawcvt.js')
-const shptogeoj = require('./data/roads/roads/shptogeoj.js')
-const dam = require('./damrcs.js')
-const geople = require('./geoPleiades.js')
-const r = require('./r.js')
 const findSpot = require('./models/FindSpot.js')
 const hoards = require('./models/hoards.js')
 const ples = require('./models/Pleiades.js')
@@ -30,9 +20,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // ------ Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-console.log(hoa)
-    
-console.log(JSON.stringify(r))
 mongoose.connect('mongodb://steve:modernWater360@ds259079.mlab.com:59079/heroku_7rt6qd22', {
   useMongoClient: true, 
 }).then(function() {
